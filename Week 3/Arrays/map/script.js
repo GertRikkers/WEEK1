@@ -1,11 +1,12 @@
 "use strict";
 
-loopArray();
-mapArray();
+copyArray();
+copyArrayWithSlice();
+copyArrayWithSpread();
 
-function mapArray() {
+function copyArray() {
   let fruits = ['Apple', 'Banana'];
-  let fruitsCopy = numbers.map(StringMath.sqrt);
+  let fruitsCopy = fruits;
   showTitle("let fruitsCopy = fruits;");
   showArrays(fruits, fruitsCopy);
   fruitsCopy[0] = "Orange";
