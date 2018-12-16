@@ -1,48 +1,37 @@
 "use strict";
 
-loopArray();
-mapArray();
+copyArray();
+copyArrayWithSlice();
+copyArrayWithSpread();
 
-function mapArray() {
+function copyArray() {
   let fruits = ['Apple', 'Banana'];
-  let fruitsCopy = numbers.map(StringMath.sqrt);
-  showTitle("let fruitsCopy = fruits;");
-  showArrays(fruits, fruitsCopy);
+  let fruitsCopy = fruits;
+  main.showTitle("let fruitsCopy = fruits;");
+  main.showArrays(fruits, fruitsCopy);
   fruitsCopy[0] = "Orange";
-  showResult("fruitsCopy[0] = 'Orange';");
-  showArrays(fruits, fruitsCopy);
+  main.showResult("fruitsCopy[0] = 'Orange';");
+  main.showArrays(fruits, fruitsCopy);
 }
 
 function copyArrayWithSlice() {
   let fruits = ['Apple', 'Banana'];
   let fruitsCopy = fruits.slice();
-  showTitle("let fruitsCopy = fruits.slice();");
-  showArrays(fruits, fruitsCopy);
+  main.showTitle("let fruitsCopy = fruits.slice();");
+  main.showArrays(fruits, fruitsCopy);
   fruitsCopy[0] = "Orange";
-  showResult("fruitsCopy[0] = 'Orange'");
-  showArrays(fruits, fruitsCopy);
+  main.showResult("fruitsCopy[0] = 'Orange'");
+  main.showArrays(fruits, fruitsCopy);
 }
 
 function copyArrayWithSpread() {
   let fruits = ['Apple', 'Banana'];
   let fruitsCopy = [...fruits];
-  showTitle("let fruitsCopy = [...fruits];");
-  showResult("fruits: " + fruits);
-  showResult("fruitsCopy: " + fruitsCopy);
+  main.showTitle("let fruitsCopy = [...fruits];");
+  main.showResult("fruits: " + fruits);
+  main.showResult("fruitsCopy: " + fruitsCopy);
   fruitsCopy[0] = "Orange";
-  showResult("fruitsCopy[0] = 'Orange'");
-  showArrays(fruits, fruitsCopy);
+  main.showResult("fruitsCopy[0] = 'Orange'");
+  main.showArrays(fruits, fruitsCopy);
 }
 
-function showResult(result) {
-  document.getElementById("result").innerHTML += result + "<br>";
-}
-
-function showTitle(title) {
-  document.getElementById("result").innerHTML += "<h3>" + title + "</h3>";
-}
-
-function showArrays(fruits, fruitsCopy) {
-  showResult("fruits: " + fruits);
-  showResult("fruitsCopy: " + fruitsCopy);
-}

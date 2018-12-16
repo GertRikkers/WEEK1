@@ -1,49 +1,43 @@
 "use strict";
 
-copyArray();
-copyArrayWithSlice();
-copyArrayWithSpread();
+loopArray();
+mapArray();
+mapArrayWithOwnAnonymousFunction()
+mapArrayWithOwnArrowFunction()
 
-function copyArray() {
+function loopArray() {
   let fruits = ['Apple', 'Banana'];
-  let fruitsCopy = fruits;
-  showTitle("let fruitsCopy = fruits;");
-  showArrays(fruits, fruitsCopy);
-  fruitsCopy[0] = "Orange";
-  showResult("fruitsCopy[0] = 'Orange';");
-  showArrays(fruits, fruitsCopy);
+  let fruitsCopy = [];
+  for (let i = 0; i < fruits.length; i++) {
+    fruitsCopy.push(fruits[i].toUpperCase())
+  }
+  main.showTitle("Using loop");
+  main.showArrays(fruits, fruitsCopy);
 }
 
-function copyArrayWithSlice() {
+function mapArray() {
   let fruits = ['Apple', 'Banana'];
-  let fruitsCopy = fruits.slice();
-  showTitle("let fruitsCopy = fruits.slice();");
-  showArrays(fruits, fruitsCopy);
-  fruitsCopy[0] = "Orange";
-  showResult("fruitsCopy[0] = 'Orange'");
-  showArrays(fruits, fruitsCopy);
+  let fruitsCopy = fruits.map(String.toUpperCase);
+  main.showTitle("Using map");
+  main.showArrays(fruits, fruitsCopy);
 }
 
-function copyArrayWithSpread() {
+function mapArrayWithOwnAnonymousFunction() {
   let fruits = ['Apple', 'Banana'];
-  let fruitsCopy = [...fruits];
-  showTitle("let fruitsCopy = [...fruits];");
-  showResult("fruits: " + fruits);
-  showResult("fruitsCopy: " + fruitsCopy);
-  fruitsCopy[0] = "Orange";
-  showResult("fruitsCopy[0] = 'Orange'");
-  showArrays(fruits, fruitsCopy);
+  let fruitsCopy = fruits.map(
+    function (fruit) {
+      return fruit.toUpperCase() + "!!!";
+    }
+  );
+  main.showTitle("Using map with own anonymous function");
+  main.showArrays(fruits, fruitsCopy);
 }
 
-function showResult(result) {
-  document.getElementById("result").innerHTML += result + "<br>";
-}
-
-function showTitle(title) {
-  document.getElementById("result").innerHTML += "<h3>" + title + "</h3>";
-}
-
-function showArrays(fruits, fruitsCopy) {
-  showResult("fruits: " + fruits);
-  showResult("fruitsCopy: " + fruitsCopy);
+function mapArrayWithOwnArrowFunction() {
+  let fruits = ['Apple', 'Banana'];
+  let fruitsCopy = fruits.map(
+    fruit => fruit.toUpperCase() + "!!!"
+  );
+  main.showTitle("Using map with own arrow function");
+  main.showArrays(fruits, fruitsCopy);
 }
