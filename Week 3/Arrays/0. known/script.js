@@ -4,7 +4,7 @@ let fruits = createArray();
 pushArray(fruits);
 popArray(fruits);
 sortArray(fruits);
-//loopArray(fruits);
+loopArray(fruits);
 
 function createArray() {
   let fruits = ['Apple','Orange','Banana'];
@@ -31,3 +31,4 @@ function sortArray(fruits) {
   main.showResult("Descending (z-a):")
   main.showArrayProperties(fruits.reverse());
 }
+

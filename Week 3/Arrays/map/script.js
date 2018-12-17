@@ -43,15 +43,13 @@ function mapArrayWithOwnArrowFunction() {
   main.showArrays(fruits, fruitsCopy);
 }
 
-function map(){
-  var map = new Map([ 
-    ['key1', 'Apple'], 
+function map() {
+  var map = new Map([
+    ['key1', 'Apple'],
     ['key2', 'Banana']
- ]);
- var value = map.get("key1");
- main.showTitle("Using a Map (Key/Value)");
- main.showResult("map: " + map); 
- main.showResult("Getting value with key 'key1' gives " + value + " as a result");
-
- 
+  ]);
+  var value = map.get("key1");
+  main.showTitle("Using a Map (Key/Value)");
+  main.showResult("map: " + map);
+  main.showResult("Getting value with key 'key1' gives '" + value + "' as a result");
 }
