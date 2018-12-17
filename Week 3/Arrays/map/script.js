@@ -2,8 +2,9 @@
 
 loopArray();
 mapArray();
-mapArrayWithOwnAnonymousFunction()
-mapArrayWithOwnArrowFunction()
+mapArrayWithOwnAnonymousFunction();
+mapArrayWithOwnArrowFunction();
+map();
 
 function loopArray() {
   let fruits = ['Apple', 'Banana'];
@@ -40,4 +41,17 @@ function mapArrayWithOwnArrowFunction() {
   );
   main.showTitle("Using map with own arrow function");
   main.showArrays(fruits, fruitsCopy);
+}
+
+function map(){
+  var map = new Map([ 
+    ['key1', 'Apple'], 
+    ['key2', 'Banana']
+ ]);
+ var value = map.get("key1");
+ main.showTitle("Using a Map (Key/Value)");
+ main.showResult("map: " + map); 
+ main.showResult("Getting value with key 'key1' gives " + value + " as a result");
+
+ 
 }
