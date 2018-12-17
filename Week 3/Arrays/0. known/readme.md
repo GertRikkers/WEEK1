@@ -1,13 +1,14 @@
-## Scope
+## Array - basis
 **Doel**
-1. Leer het onderscheid tussen function-, global- en block scope variabelen
+1. Het oefenenen van veronderstelde kennis van arrays
 
 **Opdracht**
-1. Geef van alle variabelen aan wat voor scope ze hebben.
-2. Zijn er variabelen die niet gedefinieerd zijn en daardoor op de global scope terechtkomen?
-3. Welke variabelen kun je vervangen door const en welke door let.
+1. Maak een array van strings aan.
+2. Voeg een element toe aan de array.
+3. Verwijder het laatste element uit de array.
+4. Sorteer de array in een oplopende volgorde.
+5. Sorteer de array in een aflopende volgorde.
 
-[Programma code](https://coderwall.com/p/vsdrug/how-to-create-an-image-slider-with-javascript)  
 
 **Opmerking**
 Zet de code in een apart JavaScript bestand.
