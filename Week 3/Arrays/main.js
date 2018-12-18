@@ -18,6 +18,7 @@ const main = {
 
   showArrayProperties(array){
     main.showResult("array: " + array + " with length of " + array.length);
+  console.log(array);
   }
 
 }
