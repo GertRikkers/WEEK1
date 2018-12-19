@@ -1,6 +1,6 @@
 ## Array - Basis
-**Doel**
 
+**Doel**
 Het oefenen van wat je al zou moeten weten over arrays. Heb je deze kennis niet zorg er dan voor dat je deze krijgt door te zoeken op internet: bijvoorbeeld http://w3.schools.com of op [mdn](https://developer.mozilla.org)
 
 1. Je kan hierna een array aanmaken op verschillende manieren.
