@@ -1,4 +1,5 @@
 ## Functions - Arrow
+
 **Doel**
 Het leren gebruiken van een arrow function.
 
