@@ -20,8 +20,8 @@ celcius[4] = 54;
 result[4] = "Wanneer het buiten " + celcius[4] + " graden celcius is dan is dat " + ((celcius[4]*1.8)+32) + " fahrenheit."
 main.showResult(result[4]);
 
-// Maar dit is toch beter
-main.showTitle("Maar dit is toch beter");
+// Maar het kan beter
+main.showTitle("Maar het kan beter");
 function ShowTemperature(celcius){
   let result = "Wanneer het buiten " + celcius + " graden celcius is dan is dat " + ((celcius*1.8)+32) + " fahrenheit."
   return result;
