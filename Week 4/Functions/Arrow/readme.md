@@ -1,9 +1,9 @@
 # Functions - Arrow
 
-##Doel
+## Doel
 Het leren gebruiken van een arrow function.
 
-**Opdracht**
+## Opdracht
 1. array van strings aan met hoofdletters en kleine letters.
 2. Doorloop deze array en zet elk element om naar hoofdletters. 
 3. Maak nu gebruik van .map om hetzelfde resultaat te bereiken.
