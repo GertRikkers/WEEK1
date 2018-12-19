@@ -1,6 +1,6 @@
-## Functions - Arrow
+# Functions - Arrow
 
-**Doel**
+##Doel
 Het leren gebruiken van een arrow function.
 
 **Opdracht**
