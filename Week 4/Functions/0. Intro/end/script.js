@@ -22,12 +22,12 @@ main.showResult(result[4]);
 
 // Maar het kan beter
 main.showTitle("Maar het kan beter");
-function ShowTemperature(celcius){
+function showTemperature(celcius){
   let result = "Wanneer het buiten " + celcius + " graden celcius is dan is dat " + ((celcius*1.8)+32) + " fahrenheit."
   return result;
 }
-main.showResult(ShowTemperature(50));
-main.showResult(ShowTemperature(51));
-main.showResult(ShowTemperature(52));
-main.showResult(ShowTemperature(53));
-main.showResult(ShowTemperature(54));
+main.showResult(showTemperature(50));
+main.showResult(showTemperature(51));
+main.showResult(showTemperature(52));
+main.showResult(showTemperature(53));
+main.showResult(showTemperature(54));
