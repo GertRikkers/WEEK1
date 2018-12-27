@@ -30,7 +30,7 @@ ES6_ShowTemperature();
 main.showTitle("Functions met parameter")
 ES5_ShowTemperatureWithParam(31);
 ES6_ShowTemperatureWithParam(31);
-main.showTitle("Functions met parameter en return parameter")
+main.showTitle("Functions met parameter en return waarde")
 var ES5_result = ES5_ShowTemperatureWithParamAndReturn(32);
 main.showResult(ES5_result);
 const ES6_result = ES6_ShowTemperatureWithParamAndReturn(32);

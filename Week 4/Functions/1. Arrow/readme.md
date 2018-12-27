@@ -23,9 +23,9 @@ var f = function(parameter){}
 var f = function(parameter){return "Return Parameter"}
 
 // ES6
-var f = () => {}
-var f = (parameter) => {}
-var f = (parameter) => "Return Parameter"
+const f = () => {}
+const f = (parameter) => {}
+const f = (parameter) => "Return Parameter"
 ```
 
 ### Opmerking 
