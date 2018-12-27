@@ -16,10 +16,7 @@ Het leren gebruiken van een spread operator bij het aanroepen van een functie.
 Het toepassen van de spread operator voor het doorgeven van een array als parameter voor functies waarbij geen array als parameter mag worden doorgegeven.
 ```
 const numbers = []
-// ES6
-var f = () => {}
-var f = (parameter) => {}
-var f = (parameter) => "Return Parameter"
+const min = Math.min(...numbers);
 ```
 
 ### Opmerking 
