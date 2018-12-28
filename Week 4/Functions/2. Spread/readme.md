@@ -1,4 +1,4 @@
-## Functions - Spread
+## Functies - Spread
 
 ### Doel
 Het leren gebruiken van een spread operator bij het aanroepen van een functie.

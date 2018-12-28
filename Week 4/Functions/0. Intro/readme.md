@@ -1,6 +1,6 @@
-## Functions - Intro
+## Functies - Intro
 ### Doel
-Het nut inzien van het maken en gebruiken van functions.
+Het nut inzien van het maken en gebruiken van functies.
 1. Je kunt een functie aanmaken en gebruiken.
 2. Je kunt een aantal belangrijke voordelen noemen van het maken en gebruiken van een functie.
 
