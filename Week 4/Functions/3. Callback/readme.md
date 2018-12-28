@@ -1,31 +1,25 @@
-## Functions - Callback
+## Functies - Callback
 
 ### Doel
-Het leren gebruiken van een Callback Function.
-1. Je kunt een Callback Function maken.
-2. Je kunt uitleggen wat een Callback function is.
+Het leren gebruiken van Callback-functies.
+1. Je kunt een Callback-functie maken en gebruiken
+2. Je kunt uitleggen wat een Callback-functie is.
 
 ### Opdracht
-1. Maak een ES5 Function zonder parameters.
-2. Zet deze Function om naar een Arrow Function.
-3. Maak een ES5 Function met parameters.
-4. Zet deze Function om naar een Arrow Function. 
-5. Maak een ES5 Function met parameters en een return.
-6. Zet deze Function om naar een Arrow Function. 
-7. Noem twee belangrijke redenen om Arrow Fucntions te gebruiken.
+1. Maak een Arrow-functie met een parameter.
+2. Roep deze functie aan met een Callback-functie
 
 ### Kennis
-Het maken en gebruiken van een Arrow Function en het omzetten van een ES5 Function naar een Arrow Function.  
+Het maken en gebruiken van een Callback-functie en uitleggen wat een Callback-functie is.  
 ```
-// ES5
-var f = function(){}
-var f = function(parameter){}
-var f = function(parameter){return "Return Parameter"}
+const cb = (name) => {}
 
-// ES6
-const f = () => {}
-const f = (parameter) => {}
-const f = (parameter) => "Return Parameter"
+const f = (callback) => {
+    callback(name);
+}
+
+f(cb);
+
 ```
 
 ### Opmerking 
